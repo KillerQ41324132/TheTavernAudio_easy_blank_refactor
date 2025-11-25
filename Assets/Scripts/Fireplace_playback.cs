@@ -8,11 +8,11 @@ public class Fireplace_playback : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        fireplaceEmitter.SetParameter("Fire", 0);
+        fireplaceEmitter.SetParameter(name: "Fire", value:0);
     }
 
     private void OnTriggerExit(Collider other)
     {
-        fireplaceEmitter.SetParameter("Fire", 1);
+        fireplaceEmitter.SetParameter(name:"Fire", value:1);
     }
 }

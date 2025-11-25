@@ -162,9 +162,9 @@ public class Footsteps : MonoBehaviour
         if (surfaceParameter != null)
         {
             soundInstance = RuntimeManager.CreateInstance(eventRef);
-            soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform));
+            soundInstance.set3DAttributes(RuntimeUtils.To3DAttributes(gameObject.transform)); //przyczepienie instancji
             // Ustawia parametr FMOD na podstawie ustalonej wartości.
-            soundInstance.setParameterByNameWithLabel("Footsteps_surface", surfaceParameter); 
+            soundInstance.setParameterByNameWithLabel("Footsteps2", surfaceParameter); 
             soundInstance.start();
             soundInstance.release();
         }
